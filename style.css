@@ -263,6 +263,40 @@ section#projects {
 section#contact {
   background-color: var(--navColor5);
 }
+/* contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-text {
+  margin-bottom: 100px;
+  font-family: 'Playfair Display', serif;
+  color: #84C68C
+}
+/* Font awesome contact icons */
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 38.5rem;
+}
+.fab {
+  font-size: 100px;
+  margin-right: 0px;
+  cursor: pointer;
+  color: #84C68C;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fab:hover {
+  color: #FFD2AA;
+}
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
@@ -273,6 +307,9 @@ section#contact {
 
   .menu-bars {
     top: 0.5rem;
-    right: 1rem;
+    right: 2rem;
   }
+  .social-icons {
+  width: 24.5rem;
+}
 }
