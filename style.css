@@ -11,13 +11,14 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   background: #000;
   font-family: 'Playfair Display', serif;
-
+  overflow-x: hidden;
 }
 
 /* --- Navigation Menu ------------------------------ */
