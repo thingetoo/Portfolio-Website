@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 :root {
   --primaryColor: #fff;
   --navColor1: #21292c;
@@ -32,7 +34,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  transform: translateX(-100vw)
+  transform: translateX(-100vw);
 }
 
 .overlay-slide-right {
@@ -74,7 +76,7 @@ nav ul a {
   letter-spacing: 4px;
   text-decoration: none;
   display: block;
-  text-align: center
+  text-align: center;
 }
 
 nav ul a:hover {
@@ -92,28 +94,28 @@ nav ul a:before {
   opacity: 0;
 }
 
-nav ul a:hover::before{
+nav ul a:hover::before {
   opacity: 1;
 }
 
 nav li:nth-of-type(1) {
-  background-color: var(--navColor1)
+  background-color: var(--navColor1);
 }
 
 nav li:nth-of-type(2) {
-  background-color: var(--navColor2)
+  background-color: var(--navColor2);
 }
 
 nav li:nth-of-type(3) {
-  background-color: var(--navColor3)
+  background-color: var(--navColor3);
 }
 
 nav li:nth-of-type(4) {
-  background-color: var(--navColor4)
+  background-color: var(--navColor4);
 }
 
 nav li:nth-of-type(5) {
-  background-color: var(--navColor5)
+  background-color: var(--navColor5);
 }
 
 /* Slide in animation with delay */
@@ -135,12 +137,12 @@ nav li:nth-of-type(5) {
 }
 
 .slide-in-5 {
-  animation: slide-in 0.4s linear 1.0s both;
+  animation: slide-in 0.4s linear 1s both;
 }
 
-@keyframes slide-in { 
+@keyframes slide-in {
   from {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
 
   to {
@@ -170,16 +172,15 @@ nav li:nth-of-type(5) {
   animation: slide-out 0.3s linear 0.1s both;
 }
 
-@keyframes slide-out { 
+@keyframes slide-out {
   from {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   to {
     transform: translateX(-100%);
   }
 }
-
 
 /* --- Menu Bars ------------------------------------ */
 
@@ -219,6 +220,44 @@ nav li:nth-of-type(5) {
 
 /* --- Sections ------------------------------------ */
 
+.typewritten {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+}
+
+/* Animation */
+.typewritten {
+  animation: animated-text 7s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1000px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -232,7 +271,7 @@ section {
 }
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60");
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60');
   background-size: cover;
   background-position: center center;
 }
@@ -274,7 +313,7 @@ section#contact {
 .contact-text {
   margin-bottom: 100px;
   font-family: 'Playfair Display', serif;
-  color: #84C68C
+  color: #84c68c;
 }
 /* Font awesome contact icons */
 .social-icons {
@@ -286,7 +325,7 @@ section#contact {
   font-size: 100px;
   margin-right: 0px;
   cursor: pointer;
-  color: #84C68C;
+  color: #84c68c;
   text-decoration: none;
 }
 
@@ -295,9 +334,8 @@ a {
 }
 
 .fab:hover {
-  color: #FFD2AA;
+  color: #ffd2aa;
 }
-
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
@@ -311,6 +349,6 @@ a {
     right: 2rem;
   }
   .social-icons {
-  width: 24.5rem;
-}
+    width: 24.5rem;
+  }
 }
