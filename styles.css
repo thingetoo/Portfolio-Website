@@ -293,6 +293,10 @@ section#about {
   background-color: var(--navColor2);
 }
 
+#about {
+  display: flex;
+}
+
 section#skills {
   background-color: var(--navColor3);
 }
