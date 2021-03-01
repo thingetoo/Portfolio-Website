@@ -479,11 +479,6 @@ a {
     width: 24.5rem;
   }
 
-  .typewritten {
-    animation: none;
-    white-space: normal;
-    border: none;
-  }
   section#about {
     flex-direction: column;
     justify-content: space-evenly;
@@ -510,5 +505,14 @@ a {
     justify-content: center;
     height: 50%;
     width: 50%;
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 1000px;
+    }
   }
 }

@@ -80,7 +80,29 @@
     </section>
 
     <section id="contact">
-      <h1 class="contact-text">Contact me</h1>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="text" name="email" placeholder="Your Email" />
+        <textarea name="message"></textarea>
+        <input type="text" name="honeypot" style="display: none" />
+        <input
+          type="hidden"
+          name="accessKey"
+          value="7b291b75-728a-414d-b7f6-b41bf6e08bef"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="Contact us from - example.com"
+        />
+        <input type="hidden" name="replyTo" value="@" />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="https://example.com/contact/success"
+        />
+        <input type="submit" value="Submit" />
+      </form>
       <div class="social-icons">
         <a href="https://github.com/thingetoo">
           <i class="fab fa-github"></i>
