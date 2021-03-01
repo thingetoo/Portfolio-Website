@@ -9,8 +9,8 @@
   --navColor3: #41b3a3;
   --navColor4: #e8a87c;
   --navColor5: #c38d9e;
-  --html: #ff0000;
-  --css: #0000ff;
+  --html: #e34c26;
+  --css: #0077c3;
   --js: #f0db4f;
   --react: #61dbfb;
   --node: #68a063;
@@ -266,8 +266,8 @@ nav li:nth-of-type(5) {
 }
 
 .typewritten2 {
-  animation: animated-text 3s steps(10, end) 8s 1 normal both,
-    animated-cursor 600ms steps(10, end) infinite;
+  animation: animated-text 7s steps(29, end) 8s 1 normal both,
+    animated-cursor 600ms steps(29, end) 7s;
 }
 
 /* text animation */
@@ -381,14 +381,11 @@ section#skills {
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 50%;
+  width: 50%;
 }
 
 .tech > * {
   flex: 0 0 33.3333%;
-}
-
-.fab {
-  font-size: 2em;
 }
 
 section#projects {
@@ -408,7 +405,6 @@ section#contact {
 .contact-text {
   margin-bottom: 100px;
   font-family: 'Playfair Display', serif;
-  color: #84c68c;
 }
 /* Font awesome contact icons */
 .social-icons {
@@ -417,12 +413,18 @@ section#contact {
   width: 60%;
 }
 .fab {
-  font-size: 100px;
+  font-size: 120px;
   margin-right: 0px;
   cursor: pointer;
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+  margin: 0;
+  height: min-content;
+}
+
+.fab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 a {
@@ -490,5 +492,23 @@ a {
   #about-text {
     width: auto;
     margin: 20px;
+  }
+  .about-container-item {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  #about-container {
+    display: inline-block;
+  }
+
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-gap: 10px;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
   }
 }
