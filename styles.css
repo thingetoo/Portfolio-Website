@@ -456,6 +456,19 @@ a {
   color: var(--medium);
 }
 
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form.contact-form {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    height: 50vh;
+    justify-content: space-evenly;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .typewritten {
     font-size: 16px;
